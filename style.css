@@ -1,0 +1,42 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+header{
+  display: flex;
+  justify-content: space-around;
+}
+
+.header_code{
+  text-align: center;
+  padding-top: 20px;
+}
+.header_code p{
+  margin: 0;
+  font-size: 12px;
+}
+.header_code p:first-child{
+  font-weight: 700;
+  font-size: 16px;
+}
+.header_title{
+  text-align: center;
+  padding-top: 15px;
+}
+.header_title h2 {
+  margin: 5px 0;
+}
+.header_title h2:first-child{
+  font-weight: 500;
+}
+.header_btn{
+  font-size: 12px;
+  padding-top: 20px;
+  display: flex;
+}
+.header_btn a{
+  text-decoration: none;
+  color: black;
+  padding: 10px 10px 2px;
+  border: 1.5px solid black;
+}
