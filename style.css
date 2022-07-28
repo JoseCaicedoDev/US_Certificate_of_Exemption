@@ -1,10 +1,11 @@
 body{
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
+  font-size: 14px;
 }
 header{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .header_code{
@@ -37,6 +38,21 @@ header{
 .header_btn a{
   text-decoration: none;
   color: black;
-  padding: 10px 10px 2px;
+  padding: 5px 5px 0;
   border: 1.5px solid black;
+  text-align: center;
+  width: 40px;
+}
+.header_btn a:first-child{
+  margin-right: 20px;
+}
+.header_btn p{
+  margin: 5px 0 0;
+}
+.header_btn-img{
+  width: 28px;
+}
+span{
+  font-weight: bold;
+  font-size: 16px;
 }

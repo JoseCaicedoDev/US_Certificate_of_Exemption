@@ -21,12 +21,14 @@
       <h2>Certificate of Exemption</h2>
     </div>
     <div class="header_btn">
-      <a href="">
-        <img src="doc.png" alt="">
-        PRINT</a>
+      <a href="test0001.pdf" target="_blank" onclick="window.print()">
+        <img class="header_btn-img" src="doc.png" alt="">
+        <p>PRINT</p>
+        </a>
       <a href="">
         <img src="x.png" alt="">
-        CLEAR</a>
+        <p>CLEAR</p>
+        </a>
     </div>
   </header>
   <main>
@@ -48,19 +50,29 @@
       </p>
   </main>
   <form action="" method="">
-    1 <input type="checkbox" name="" id="">Check if you are attaching the Multistate Supplemental form.
-    <select name="state" id="">
-      <option value=""> </option>
-      <option value="">AK</option>
-    </select>
-    <p>If not, enter the two-letter postal abbreviation for the state under whose laws you are claiming exemption.</p>
-    2 <input type="checkbox" name="" id=""> Check if this certificate is for a single purchase and enter the related
-    invoice/purchase order # <input type="text" name="" id="">
-    3 <p>Please print</p>
-    <hr>
-    <label for="namePurchaser">Name of purchaser</label>
-    <input type="text" name="" id="namePurchaser">
-    <hr>
+    <div>
+      <span>1</span><input type="checkbox" name="" id="">Check if you are attaching the Multistate Supplemental form.
+    </div>
+    <div>
+      <select name="state" id="">
+        <option value=""> </option>
+        <option value="">AK</option>
+      </select>
+      <p>If not, enter the two-letter postal abbreviation for the state under whose laws you are claiming exemption.</p>
+    </div>
+    <div>
+      <span>2</span>
+      <input type="checkbox" name="" id=""> Check if this certificate is for a single purchase and enter the related
+      invoice/purchase order # <input type="text" name="" id="">
+    </div>
+    <div>
+      <span>3</span>
+      <p>Please print</p>
+      <hr>
+      <label for="namePurchaser">Name of purchaser</label>
+      <input type="text" name="" id="namePurchaser">
+      <hr>
+    </div>
     <label for="businessAddress">Business address</label>
     <input type="text" name="" id="businessAddress">
     <label for="city">City</label>
@@ -241,7 +253,7 @@
     <label for="Date">Print name here</label>
     <input type="date" name="" id="Date">
   </form>
-  <a href="test0001.pdf" target="_blank" onclick="window.print()"> print PDF </a>
+
 </body>
 
 </html>
