@@ -51,79 +51,125 @@
   </main>
   <form action="" method="">
     <div>
-      <span>1</span><input type="checkbox" name="" id="">Check if you are attaching the Multistate Supplemental form.
+      <span class="numberSelect">1</span><input type="checkbox" name="" id="">Check if you are attaching the Multistate Supplemental form.
     </div>
     <div>
       <select name="state" id="">
         <option value=""> </option>
         <option value="">AK</option>
       </select>
-      <p>If not, enter the two-letter postal abbreviation for the state under whose laws you are claiming exemption.</p>
+      <span>If not, enter the two-letter postal abbreviation for the state under whose laws you are claiming exemption.</span>
     </div>
     <div>
-      <span>2</span>
+      <span class="numberSelect">2</span>
       <input type="checkbox" name="" id=""> Check if this certificate is for a single purchase and enter the related
-      invoice/purchase order # <input type="text" name="" id="">
+      invoice/purchase order # <input type="text" name="" id="" class="numberOrder">.
     </div>
-    <div>
-      <span>3</span>
-      <p>Please print</p>
-      <hr>
+    <span class="numberSelect">3</span><b class="itemTitle">Please print</b>
+    <hr class="container">
+    <div class="container namePurchaser">
       <label for="namePurchaser">Name of purchaser</label>
       <input type="text" name="" id="namePurchaser">
       <hr>
     </div>
-    <label for="businessAddress">Business address</label>
-    <input type="text" name="" id="businessAddress">
-    <label for="city">City</label>
-    <input type="text" name="" id="city">
-    <label for="state">State</label>
-    <select name="" id="state">
-      <option value=""> </option>
-      <option value="">AK</option>
-    </select>
-    <label for="zipCode">Zip code</label>
-    <input type="text" name="" id="zipCode">
-    <hr>
-    <label for="idNumber">Purchaser’s tax ID number</label>
-    <input type="text" name="" id="">
-    <label for="stateIssue">State of issue</label>
-    <select name="" id="stateIssue">
-      <option value=""> </option>
-      <option value="">AK</option>
-    </select>
-    <label for="country">Country of issue</label>
-    <input type="text" name="" id="country">
-    <hr>
-    <p>If no tax ID number, enter one of the following:</p>
-    <label for="fein">FEIN</label>
-    <input type="text" name="" id="fein">
-    <p>Driver’s license number/State issued ID number</p>
-    <label for="stateIssue">State of issue</label>
-    <select name="" id="stateIssue">
-      <option value=""> </option>
-      <option value="">AK</option>
-    </select>
-    <label for="number">number</label>
-    <input type="text" name="" id="number">
-    <label for="diplomatNumber">Foreign diplomat number</label>
-    <input type="text" name="" id="diplomatNumber">
-    <hr>
-    <label for="nameSeller">Name of seller from whom you are purchasing, leasing, or renting</label>
-    <input type="text" name="" id="nameSeller">
-    <hr>
-    <label for="address">Seller’s address</label>
-    <input type="text" name="" id="address">
-    <label for="city">City</label>
-    <input type="tel" name="" id="city">
-    <label for="state">State</label>
-    <select name="" id="state">
-      <option value=""> </option>
-      <option value="">AK</option>
-    </select>
-    <label for="zipCode">Zip code</label>
-    <input type="text" name="" id="zipCode">
-    <hr>
+    <section class="container address">
+      <div class="containerContent businessAddress">
+        <label for="businessAddress">Business address</label>
+        <input type="text" name="" id="businessAddress">
+      </div>
+      <div class="containerContent">
+        <label for="city">City</label>
+        <input type="text" name="" id="city">
+      </div>
+      <div class="containerContent">
+        <label for="state">State</label>
+        <select name="state" id="state">
+          <option value=""> </option>
+          <option value="">AK</option>
+        </select>
+      </div>
+      <div class="containerContent zipCode">
+        <label for="zipCode">Zip code</label>
+        <input type="text" name="" id="zipCode">
+      </div>
+    </section>
+    <hr class="container">
+
+    <section class="container country">
+      <div class="containerContent idNumber">
+        <label for="idNumber">Purchaser’s tax ID number</label>
+        <input type="text" name="" id="">
+      </div>
+      <div class="containerContent">
+        <label for="stateIssue">State of issue</label>
+        <select name="" id="stateIssue">
+          <option value=""> </option>
+          <option value="">AK</option>
+        </select>
+      </div>
+      <div class="containerContent">
+        <label for="country">Country of issue</label>
+        <input type="text" name="" id="country">
+      </div>
+    </section>
+    <hr class="container">
+
+    <section class="container fein">
+      <label>If no tax ID number, enter one of the following:</label>
+      <div class="containerContent">
+        <label for="fein">FEIN</label>
+        <input type="text" name="" id="fein">
+      </div>
+      <label>Driver’s license number/State issued ID number</label>
+
+      <div class="containerContent">
+        <label for="stateIssue">State of issue</label>
+        <select name="" id="stateIssue">
+          <option value=""> </option>
+          <option value="">AK</option>
+        </select>
+      </div>
+      <div class="containerContent">
+        <label for="number">number</label>
+        <input type="text" name="" id="number">
+      </div>
+      <div class="containerContent">
+        <label for="diplomatNumber">Foreign diplomat number</label>
+        <input type="text" name="" id="diplomatNumber">
+      </div>
+    </section>
+    <hr class="container">
+
+    <div class="container containerContent">
+      <label for="nameSeller">Name of seller from whom you are purchasing, leasing, or renting</label>
+      <input type="text" name="" id="nameSeller">
+      <hr>
+    </div>
+
+
+    <section class="container address">
+      <div class="containerContent businessAddress">
+        <label for="businessAddress">Seller’s address</label>
+        <input type="text" name="" id="businessAddress">
+      </div>
+      <div class="containerContent">
+        <label for="city">City</label>
+        <input type="text" name="" id="city">
+      </div>
+      <div class="containerContent">
+        <label for="state">State</label>
+        <select name="state" id="state">
+          <option value=""> </option>
+          <option value="">AK</option>
+        </select>
+      </div>
+      <div class="containerContent zipCode">
+        <label for="zipCode">Zip code</label>
+        <input type="text" name="" id="zipCode">
+      </div>
+    </section>
+    <hr class="container">
+
 
     4 <p>Type of business. Check the number that describes your business.</p>
     <ul>
@@ -253,7 +299,7 @@
     <label for="Date">Print name here</label>
     <input type="date" name="" id="Date">
   </form>
-
+<script src="index.js"></script>
 </body>
 
 </html>
