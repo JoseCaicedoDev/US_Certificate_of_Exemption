@@ -1,0 +1,24 @@
+body{
+  margin-inline: 10px;
+}
+form{
+  margin-inline-start: 0px;
+}
+.address, .country, .fein{
+  display: block;
+}
+input{
+  background: rgb(221, 228, 255);
+}
+#state, #stateIssue{
+  width: 30%;
+}
+.containerContent.businessAddress, .containerContent.idNumber{
+  width: 100%;
+}
+.containerContent>input{
+  width: 100%;
+}
+.selectOption{
+  display: block;
+}
